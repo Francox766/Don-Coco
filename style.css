@@ -1,0 +1,11 @@
+.Encabezado_l{
+    display: flex ;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.iniciar_s{
+    display: flex ;
+    justify-content: flex-end;
+    background-color: aquamarine;
+}
