@@ -1,11 +1,78 @@
-.Encabezado_l{
-    display: flex ;
-    justify-content: space-between;
-    position: absolute;
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.iniciar_s{
-    display: flex ;
-    justify-content: flex-end;
-    background-color: aquamarine;
+.container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: rgb(253, 141, 89);
+  position: relative;
+}
+
+.Encabezado {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Encabezado img {
+  border-radius: 65%;
+  margin-left: 11px;
+  margin-right: 11px;
+    width: 60px;
+}
+
+.iniciar_logo {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2%;
+}
+.iniciar_logo a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-right: 1%;
+}
+
+.iniciar_logo img {
+  width: 6%; 
+  image-rendering:crisp-edges;
+  margin-right: 1%;
+}
+
+.iniciar_logo button {
+  width: 20%;
+  height: 30px;
+  margin-right: 2%;
+  border-radius: 15px;
+  background-color: rgb(255, 179, 92);
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.iniciar_logo button:hover {
+  background-color: rgb(255, 94, 0);
+}
+
+.main_titulo {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.main_titulo img {
+  position: absolute;
+  width: 100%;
+  height: auto;
 }
