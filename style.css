@@ -1,147 +1,189 @@
 body {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .container {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  flex-direction: row;
-  background-color: rgb(253, 141, 89);
-  position: relative;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgb(124, 142, 156);
+    position: relative;
 }
 
 .Encabezado {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .Encabezado img {
-  border-radius: 65%;
-  margin-left: 11px;
-  margin-right: 11px;
-    width: 60px;
+    border-radius: 65%;
+    margin-left: 11px;
+    margin-right: 11px;
+    width: 100px;
+    
 }
 
 .iniciar_logo {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2%;
 }
+
 .iniciar_logo a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  margin-right: 1%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 3%;
 }
 
 .iniciar_logo img {
-  width: 6%; 
-  image-rendering:crisp-edges;
-  margin-right: 1%;
+    width: 3%;
+    image-rendering: crisp-edges;
+    margin-right: 1%;
+    filter: invert(100%);
 }
 
 .iniciar_logo button {
-  width: 20%;
-  height: 30px;
-  margin-right: 2%;
-  border-radius: 15px;
-  background-color: rgb(255, 179, 92);
-  border: none;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
+    width: 20%;
+    height: 30px;
+    margin-right: 2%;
+    border-radius: 15px;
+    background-color: rgb(7, 57, 103);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .iniciar_logo button:hover {
-  background-color: rgb(255, 94, 0);
+    background-color: rgb(98, 116, 236);
 }
 
+
 .main_titulo {
-  position: relative;
-  width: 100%;
-  height: auto;
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .main_titulo img {
-  position: absolute;
-  width: 100%;
-  height: auto;
+    position: absolute;
+    width: 100%;
+    height: auto;
 }
 
 section.carta-menu {
-  display: block;
-  margin-top: 60px; /* separa visualmente del bloque anterior */
-  padding: 30px;
-  background-color: #fff8f0;
-  border-top: 4px solid #e67e22;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    display: block;
+    margin-top: 60px;
+    padding: 30px;
+    background-color:rgb(124, 142, 156);
+    border-top: 4px solid rgb(7, 57, 103);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-
-
 .carta-menu h2 {
-  text-align: center;
-  font-size: 2.2em;
-  color: #d35400;
-  margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.2em;
+    color: #3b3a39;
+    margin-bottom: 30px;
 }
 
 .categoria {
-  margin-bottom: 40px;
-  padding: 20px;
-  background-color: #fefefe;
-  border-left: 6px solid #e67e22;
-  border-radius: 6px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fefefe;
+    border-left: 6px solid rgb(7, 57, 103);
+    border-radius: 6px;
+
+    /* --- Scroll horizontal --- */
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* Scroll horizontal estético */
+.categoria::-webkit-scrollbar {
+    height: 8px;
+}
+
+.categoria::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.categoria::-webkit-scrollbar-thumb {
+    background: #e67e22;
+    border-radius: 10px;
+}
+
+.categoria::-webkit-scrollbar-thumb:hover {
+    background: #d35400;
 }
 
 .categoria h3 {
-  font-size: 1.6em;
-  margin-bottom: 15px;
-  color: #2c3e50;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #2c3e50;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
+/* --- Productos en fila --- */
+.categoria ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
-li {
-  margin-bottom: 15px;
-  font-size: 1.1em;
-  font-weight: 500;
-  color: #333;
+/* --- Cada producto como tarjeta --- */
+.categoria li {
+    min-width: 180px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* --- Imagenes todas iguales --- */
+.categoria li img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .ingredientes {
-  font-size: 0.9em;
-  color: #7f8c8d;
-  font-style: italic;
-  margin-top: 4px;
-  margin-left: 10px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-top: 4px;
 }
 
 .comprar {
-  margin-left: 10px;
-  background-color: #e67e22;
-  color: white;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+    margin-top: 8px;
+    background-color: rgb(7, 57, 103);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .comprar:hover {
-  background-color: #d35400;
+    background-color: rgb(98, 116, 236);
 }
