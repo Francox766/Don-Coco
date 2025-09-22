@@ -76,3 +76,72 @@ body {
   width: 100%;
   height: auto;
 }
+
+section.carta-menu {
+  display: block;
+  margin-top: 60px; /* separa visualmente del bloque anterior */
+  padding: 30px;
+  background-color: #fff8f0;
+  border-top: 4px solid #e67e22;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+
+
+.carta-menu h2 {
+  text-align: center;
+  font-size: 2.2em;
+  color: #d35400;
+  margin-bottom: 30px;
+}
+
+.categoria {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fefefe;
+  border-left: 6px solid #e67e22;
+  border-radius: 6px;
+}
+
+.categoria h3 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #333;
+}
+
+.ingredientes {
+  font-size: 0.9em;
+  color: #7f8c8d;
+  font-style: italic;
+  margin-top: 4px;
+  margin-left: 10px;
+}
+
+.comprar {
+  margin-left: 10px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.comprar:hover {
+  background-color: #d35400;
+}
