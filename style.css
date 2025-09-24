@@ -30,7 +30,7 @@ body {
     
 }
 
-.iniciar_logo {
+.logouser {
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-end;
@@ -38,34 +38,8 @@ body {
     margin-right: 2%;
 }
 
-.iniciar_logo a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    margin-right: 3%;
-}
-
-.iniciar_logo img {
-    width: 3%;
-    image-rendering: crisp-edges;
-    margin-right: 1%;
-    filter: invert(100%);
-}
-
-.iniciar_logo button {
-    width: 20%;
-    height: 30px;
-    margin-right: 2%;
-    border-radius: 15px;
-    background-color: rgb(7, 57, 103);
-    border: none;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.iniciar_logo button:hover {
-    background-color: rgb(98, 116, 236);
+.logouser img{
+    width: 30px;
 }
 
 
