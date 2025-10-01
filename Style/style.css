@@ -3,7 +3,7 @@ que se utiliza en el h1"*/
 
 @font-face {
     font-family: 'DonCoco';
-    src: url('/fuente/WorkNews.ttf')
+    src: url('./fuente/WorkNews.ttf')
 }
 
 body {
@@ -50,7 +50,7 @@ h1::before {
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    background: url("/img/hamburgue.png") no-repeat center/contain;
+    background: url("./img/hamburgue.png") no-repeat center/contain;
     rotate: -20deg;
     cursor: pointer;
     transition: rotate 0.3s ease;
