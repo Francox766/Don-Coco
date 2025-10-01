@@ -5,6 +5,18 @@ body{
     padding: 20px;
 }
 
+header {
+    background-color: rgb(150, 97, 54);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
 .Agregar_cli, .Ver_cli, .Hacer_venta, .Historial_ventas {
     background: #fff;
     padding: 20px;
@@ -25,4 +37,11 @@ button {
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
 }

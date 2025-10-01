@@ -13,17 +13,31 @@
     <header>
         <div class="container">
             <div class="Encabezado">
-                <img src="img/doncocoLogo.png" alt="" />
+                <a href="/index.html"><img src="/img/doncocoLogo-sinfondo.png" alt="" /></a>
             </div>
-            <div class="iniciar_logo">
-                <button><a href="/index.html">Cerrar Sesion</a></button>
+          
+            <div class="logouser">
+                <button class="btn-opc" onclick="Apare_Opc()"><img src="/img/menu.png" alt=""></button>
 
-                <img src="img/ini_logo.png" alt="" />
-            
+                <a href="login.html">
+                    <img src="/img/ini_logo.png" alt="" />
+                </a>
+            </div>
+        </div>
+
+        <div class="p_opc">
+            <div class="opc">
+                <button><a href="/panel.html">Historial</a></button>
+                <button><a href="">Ver cliente</a></button>
+                <button><a href="">Ver venta</a></button>
+
+
+            </div>
         </div>
     </header>
     <main>
-        <div class="Agregar_cli">
+        <div class=" panel-container">
+            <div class="Agregar_cli">
             <h2>Agregar cliente</h2>
             <form action="">
                 <input type="text" placeholder="Nombre">
@@ -76,6 +90,8 @@
                 <input type="text" placeholder="Mozo">
                 <button>Vender</button>
         </div>
+        </div>
+        
 
     </main>
 

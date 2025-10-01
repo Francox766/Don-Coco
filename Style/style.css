@@ -212,6 +212,7 @@ section.carta-menu {
     /* --- Scroll horizontal --- */
     overflow-x: auto;
     white-space: nowrap;
+
 }
 
 
@@ -246,9 +247,10 @@ section.carta-menu {
 
 .categoria ul {
     display: flex;
-    gap: 20px;
+    gap: 130px;
     padding: 0;
     margin: 0;
+    justify-content:center;
 }
 
 
@@ -355,4 +357,12 @@ section.carta-menu {
     .Encabezado img {
         display: none;
     }
+}
+
+@media (max-width: 1920px) {
+    .p_opc {
+        font-size: 0.8em;
+        top: 14.5%;
+    }
+
 }
