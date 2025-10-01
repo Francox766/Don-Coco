@@ -1,0 +1,358 @@
+/*Esto que esta aca abajo es para importar una fuente de letra, como ven, importe puse la ruta de la fuente y le puse un nombre "DonCoco
+que se utiliza en el h1"*/
+
+@font-face {
+    font-family: 'DonCoco';
+    src: url('/fuente/WorkNews.ttf')
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    user-select: none;
+    background-color: rgb(238, 158, 120);
+}
+
+header .container .logouser img {
+    filter: invert(1);
+}
+
+.container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    top: 0px;
+    border-bottom: 4px solid rgb(150, 67, 12);
+    background-color: rgb(241, 124, 70);
+    position: fixed;
+    height: 120px;
+    z-index: 0;
+    border-bottom-left-radius: 30%;
+}
+
+h1 {
+    color: white;
+    font-size: 350%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: DonCoco, 'Times New Roman', Times, serif;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    left: 94%;
+    top: 120%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: url("/img/hamburgue.png") no-repeat center/contain;
+    rotate: -20deg;
+    cursor: pointer;
+    transition: rotate 0.3s ease;
+}
+
+h1:hover::before {
+    rotate: 0deg;
+    transition: rotate 0.3s ease;
+}
+
+.p_opc {
+    display: none;
+    position: fixed;
+    width: 90px;
+    right: 2%;
+    top: 18.6%;
+    border: 4px solid rgb(150, 67, 12);
+    background-color: rgb(241, 124, 70);
+    animation: desaparecer 2s ease-in-out;
+    border-top: 5px solid rgba(150, 67, 12, 0);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+/*Esto que esta aca abajo es para la animacion de la barrita de opciones broooooooooderrrrrrr*/
+
+@keyframes aparecer {
+    from {
+        opacity: 1;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes desaparecer {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(122%);
+    }
+}
+
+.btn-opc {
+    background: none;
+    border: none;
+    filter: invert(0);
+    cursor: pointer;
+}
+
+.btn-opc img {
+    width: 30px;
+}
+
+.btn-opc:hover {
+    transition: filter 0.3s ease;
+}
+
+.opc {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.opc button {
+    background-color: rgb(255, 128, 24);
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 2px;
+}
+
+.opc button:hover {
+    background-color: rgb(255, 136, 68);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.Encabezado {
+    z-index: -1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Encabezado img {
+    border-radius: 65%;
+    margin-left: 11px;
+    margin-right: 11px;
+    width: 100px;
+    margin-bottom: 13px;
+}
+
+.logouser {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2%;
+}
+
+.logouser img {
+    width: 30px;
+}
+
+.main_titulo {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.main_titulo img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+section.carta-menu {
+    display: block;
+    margin-top: 120px;
+    padding: 30px;
+    background-color: rgb(238, 158, 120);
+    border-top: 4px solid rgb(150, 67, 12);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-top: 0px;
+    border-bottom: 4px solid rgb(150, 67, 12);
+}
+
+.carta-menu h2 {
+    text-align: center;
+    font-size: 2.2em;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.categoria {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fefefe;
+    border-left: 6px solid rgb(150, 67, 12);
+    border-radius: 6px;
+    /* --- Scroll horizontal --- */
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+
+/* Scroll horizontal estético */
+
+.categoria::-webkit-scrollbar {
+    height: 8px;
+}
+
+.categoria::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.categoria::-webkit-scrollbar-thumb {
+    background: #e67e22;
+    border-radius: 10px;
+}
+
+.categoria::-webkit-scrollbar-thumb:hover {
+    background: #d35400;
+}
+
+.categoria h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+
+/* --- Productos en fila --- */
+
+.categoria ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* --- Cada producto como tarjeta --- */
+
+.categoria li {
+    min-width: 180px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* --- Imagenes todas iguales --- */
+
+.categoria li img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.ingredientes {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+.comprar {
+    margin-top: 8px;
+    background-color: rgb(255, 128, 24);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.comprar:hover {
+    background-color: rgb(255, 136, 68);
+}
+
+
+/* Esto que esta aca abajo es para la resolucion broooooooooooooooooderrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
+
+@media (max-width: 700px) {
+    .opc {
+        flex-direction: column;
+        top: 0%;
+    }
+}
+
+@media (max-width: 500px) {
+    .p_opc {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 382px) {
+    .p_opc {
+        font-size: 0.8em;
+        top: 21.4%;
+    }
+    .Encabezado img {
+        display: none;
+    }
+    h1 {
+        font-size: 250%;
+        margin-left: 5px;
+        margin-top: 35px;
+    }
+    h1::before {
+        width: 30px;
+        height: 30px;
+        left: 92%;
+        top: 80%;
+    }
+}
+
+@media (max-width: 360px) {
+    .p_opc {
+        font-size: 0.8em;
+        top: 16.1%;
+    }
+    .Encabezado img {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .p_opc {
+        font-size: 0.8em;
+        top: 17.7%;
+    }
+    .Encabezado img {
+        display: none;
+    }
+}
