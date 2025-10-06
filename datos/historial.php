@@ -1,9 +1,10 @@
+<?php include 'seguridad.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Historial de Ventas</title>
     <link rel="stylesheet" href="../Style/style.css">
     <link rel="stylesheet" href="../Style/stylePanel.css">
 </head>
@@ -12,23 +13,6 @@
         <div class="container">
             <div class="Encabezado">
                 <a href="../index.html"><img src="../img/doncocoLogo-sinfondo.png" alt="" /></a>
-            </div>
-          
-            <div class="logouser">
-                <button class="btn-opc" onclick="Apare_Opc()"><img src="./img/menu.png" alt=""></button>
-
-                <a href="login.html">
-                    <img src="../img/ini_logo.png" alt="" />
-                </a>
-            </div>
-        </div>
-
-        <div class="p_opc">
-            <div class="opc">
-                <button><a href="../datos/historial.html">Historial</a></button>
-                <button><a href="../datos/ver_cli.html">Ver cliente</a></button>
-                <button><a href="../datos/ver_venta.html">Hacer venta</a></button>
-                <button><a href="../datos/agre_clin.html">Agregar cliente</a></button>
             </div>
         </div>
     </header>
@@ -40,7 +24,9 @@
                 <tr>
                     <th>Cliente</th>
                     <th>Producto</th>
-                    <th>Monto</th>
+                    <th>Cantidad</th>
+                    <th>Monto Unitario</th>
+                    <th>Total</th>
                     <th>Mozo</th>
                 </tr>
                 <?php
@@ -51,7 +37,7 @@
                 }
 
                 // Consulta para obtener los datos de la tabla "producto"
-                $sql = "SELECT cliente, producto, monto, mozo FROM producto";
+                $sql = "SELECT cliente, producto, cantidad, monto, total, mozo FROM producto";
                 $resultado = mysqli_query($conexion, $sql);
 
                 // Verificar si hay resultados
@@ -61,12 +47,14 @@
                         echo "<tr>
                                 <td>{$fila['cliente']}</td>
                                 <td>{$fila['producto']}</td>
+                                <td>{$fila['cantidad']}</td>
                                 <td>{$fila['monto']}</td>
+                                <td>{$fila['total']}</td>
                                 <td>{$fila['mozo']}</td>
                               </tr>";
                     }
                 } else {
-                    echo "<tr><td colspan='4'>No hay datos disponibles</td></tr>";
+                    echo "<tr><td colspan='6'>No hay datos disponibles</td></tr>";
                 }
 
                 // Cerrar la conexión
@@ -76,5 +64,4 @@
         </div>
     </main>
 </body>
-<script src="../Script/aparecer_opciones.js"></script>
 </html>
