@@ -31,7 +31,7 @@
                 <button><a href="../datos/historial.php">Historial</a></button>
                 <button><a href="../datos/ver_cli.php">Ver cliente</a></button>
                 <button><a href="../datos/hacer_ventas.php">Hacer venta</a></button>
-                <button><a href="--/datos/agre_clin.php">Agregar cliente</a></button>
+                <button><a href="../datos/agre_clin.php">Agregar cliente</a></button>
             </div>
         </div>
 

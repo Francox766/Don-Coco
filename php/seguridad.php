@@ -1,11 +1,12 @@
 <?php
-//inicio la sesión 
+// Inicio la sesión
 session_start();
-//comprueba que el usuario esta autentificado 
-if ($_SESSION["autentificado"] != "1") {
-//si no existe, se dirige a la página de inicio 
-header("location: index.html");
-//salimos del script 
-exit();
+
+// Comprueba que el usuario está autentificado
+if (!isset($_SESSION["autentificado"])) {
+    // Si no está autentificado, redirige a la página de inicio
+    header("Location: ../index.html");
+    // Salimos del script
+    exit();
 }
 ?>

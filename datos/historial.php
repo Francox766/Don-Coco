@@ -1,4 +1,4 @@
-<?php include 'seguridad.php'; ?>
+<?php include ('../php/seguridad.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
