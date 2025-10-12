@@ -1,0 +1,109 @@
+.Ver_cli {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background: #fff8f4;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(241, 124, 70, 0.2);
+    backdrop-filter: blur(3px);
+    overflow-x: auto; /* permite scroll horizontal si es necesario */
+}
+
+.Ver_cli h2 {
+    text-align: center;
+    color: rgb(241, 124, 70);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* evita que se comprima demasiado */
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+th {
+    background-color: rgb(241, 124, 70);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    text-align: left;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+td {
+    background-color: #fff;
+    color: #333;
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(241, 124, 70, 0.2);
+    transition: background 0.3s, transform 0.2s;
+}
+
+tr:hover td {
+    background-color: rgba(241, 124, 70, 0.1);
+    transform: scale(1.01);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Suaviza el scroll horizontal */
+.Ver_cli::-webkit-scrollbar {
+    height: 8px;
+}
+
+.Ver_cli::-webkit-scrollbar-thumb {
+    background: rgb(241, 124, 70);
+    border-radius: 10px;
+}
+
+.Ver_cli::-webkit-scrollbar-track {
+    background: rgba(241, 124, 70, 0.1);
+}
+
+/* Fondo general */
+body {
+    background: linear-gradient(120deg, rgb(255, 235, 221), rgb(255, 255, 255));
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .Ver_cli {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 13px;
+        min-width: 500px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .Ver_cli h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        min-width: 400px;
+    }
+
+    .Ver_cli h2 {
+        font-size: 1.2rem;
+    }
+}

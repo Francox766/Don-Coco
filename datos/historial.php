@@ -6,16 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historial de Ventas</title>
     <link rel="stylesheet" href="../Style/style.css">
-    <link rel="stylesheet" href="../Style/stylePanel.css">
+    <link rel="stylesheet" href="../Style/styleTablasHistorial.css">
 </head>
 <body>
     <header>
-        <div class="container">
+    <div class="container">
             <div class="Encabezado">
-                <a href="../index.html"><img src="../img/doncocoLogo-sinfondo.png" alt="" /></a>
+    <a href="../php/administrador.php">
+        <img src="../img/doncocoLogo-sinfondo.png" alt="Logo" />
+    </a>
+</div>
+            <h1>DonCoco</h1>
+            <div class="logouser">
+                <button class="btn-opc" onclick="Apare_Opc()"><img src="../img/menu.png" alt=""></button>
+
+                <a href="salir.php">
+                    <img src="../img/ini_logo.png" alt="" />
+                </a>
             </div>
         </div>
-    </header>
+
+        <div class="p_opc">
+            <div class="opc">
+                <button><a href="../datos/historial.php">Historial</a></button>
+                <button><a href="../datos/ver_cli.php">Ver cliente</a></button>
+                <button><a href="../datos/hacer_ventas.php">Hacer venta</a></button>
+                <button><a href="../datos/agre_clin.php">Agregar cliente</a></button>
+            </div>
+        </div>
+  </header>
 
     <main>
         <div class="Historial_ventas">
@@ -63,5 +82,6 @@
             </table>
         </div>
     </main>
+    <script src="../Script/aparecer_opciones.js"></script>
 </body>
 </html>
