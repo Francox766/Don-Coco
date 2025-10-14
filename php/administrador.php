@@ -45,17 +45,17 @@
                 <h3>Milanesas</h3>
                 <ul>
                     <li>
-                        <img src="../img/milacomun.png" alt=""> Común <button class="comprar">Comprar</button>
+                        <img src="../img/milacomun.png" alt=""> Común
                         <p class="ingredientes">Carne de res, pan rallado, huevo, sal</p>
                         <p class="ingredientes"><strong>$5.500</strong></p>
                     </li>
                     <li>
-                        <img src="../img/milaconfritas.png" alt=""> Con papas <button class="comprar">Comprar</button>
+                        <img src="../img/milaconfritas.png" alt=""> Con papas
                         <p class="ingredientes">Milanesa común + papas fritas</p>
                         <p class="ingredientes"><strong>$7.000</strong></p>
                     </li>
                     <li>
-                        <img src="../img/milanapo.png" alt=""> Napolitana <button class="comprar">Comprar</button>
+                        <img src="../img/milanapo.png" alt=""> Napolitana
                         <p class="ingredientes">Milanesa, salsa de tomate, jamón, queso</p>
                         <p class="ingredientes"><strong>$7.500</strong></p>
                     </li>
@@ -67,17 +67,17 @@
                 <h3>Hamburguesas</h3>
                 <ul>
                     <li>
-                        <img src="../img/hamburg1.png" alt=""> Comun <button class="comprar">Comprar</button>
+                        <img src="../img/hamburg1.png" alt=""> Comun
                         <p class="ingredientes">Carne, pan, ketchup, mayonesa</p>
                         <p class="ingredientes"><strong>$6.000</strong></p>
                     </li>
                     <li>
-                        <img src="../img/hamburg2.png" alt=""> Completa <button class="comprar">Comprar</button>
+                        <img src="../img/hamburg2.png" alt=""> Completa
                         <p class="ingredientes">Carne, queso, lechuga, tomate, huevo</p>
                         <p class="ingredientes"><strong>$7.500</strong></p>
                     </li>
                     <li>
-                        <img src="../img/hamburg3.png" alt=""> Hamburguerpizza <button class="comprar">Comprar</button>
+                        <img src="../img/hamburg3.png" alt=""> Hamburguerpizza
                         <p class="ingredientes">Hamburguesa con salsa y queso estilo pizza</p>
                         <p class="ingredientes"><strong>$15.000</strong></p>
                     </li>
@@ -88,17 +88,17 @@
                 <h3>Empanadas</h3>
                 <ul>
                     <li>
-                        <img src="../img/empa1.jpg" alt=""> Carne <button class="comprar">Comprar</button>
+                        <img src="../img/empa1.jpg" alt=""> Carne
                         <p class="ingredientes">Carne picada, cebolla, huevo, aceituna</p>
                         <p class="ingredientes"><strong>$7.000</strong></p>
                     </li>
                     <li>
-                        <img src="../img/empa2.png" alt=""> Pollo <button class="comprar">Comprar</button>
+                        <img src="../img/empa2.png" alt=""> Pollo
                         <p class="ingredientes">Pollo desmenuzado, morrón, cebolla</p>
                         <p class="ingredientes"><strong>$7.000</strong></p>
                     </li>
                     <li>
-                        <img src="../img/empa3.png" alt=""> Jamón y queso <button class="comprar">Comprar</button>
+                        <img src="../img/empa3.png" alt=""> Jamón y queso
                         <p class="ingredientes">Jamón cocido, queso mozzarella</p>
                         <p class="ingredientes"><strong>$7.500</strong></p>
                     </li>
@@ -109,17 +109,17 @@
                 <h3>Lomos</h3>
                 <ul>
                     <li>
-                        <img src="../img/lomo1.png" alt=""> Comun <button class="comprar">Comprar</button>
+                        <img src="../img/lomo1.png" alt=""> Comun
                         <p class="ingredientes">Lomo, pan, mayonesa</p>
                         <p class="ingredientes"><strong>$7.000</strong></p>
                     </li>
                     <li>
-                        <img src="../img/lomo2.png" alt=""> Completo <button class="comprar">Comprar</button>
+                        <img src="../img/lomo2.png" alt=""> Completo
                         <p class="ingredientes">Lomo, queso, tomate, lechuga, huevo</p>
                         <p class="ingredientes"><strong>$7.800</strong></p>
                     </li>
                     <li>
-                        <img src="../img/lomo3.png" alt=""> Pizza lomo <button class="comprar">Comprar</button>
+                        <img src="../img/lomo3.png" alt=""> Pizza lomo
                         <p class="ingredientes">Lomo con salsa de tomate y queso gratinado</p>
                         <p class="ingredientes"><strong>$14.000</strong></p>
                     </li>
@@ -130,17 +130,17 @@
                 <h3>Panchos</h3>
                 <ul>
                     <li>
-                        <img src="../img/pancho1.png" alt=""> Comun <button class="comprar">Comprar</button>
+                        <img src="../img/pancho1.png" alt=""> Comun
                         <p class="ingredientes">Pancho clásico con pan y salchicha</p>
                         <p class="ingredientes"><strong>$2.200</strong></p>
                     </li>
                     <li>
-                        <img src="../img/pancho2.png" alt=""> Con poncho <button class="comprar">Comprar</button>
+                        <img src="../img/pancho2.png" alt=""> Con poncho
                         <p class="ingredientes">Pancho con queso fundido y panceta</p>
                         <p class="ingredientes"><strong>$2.500</strong></p>
                     </li>
                     <li>
-                        <img src="../img/pancho3.png" alt=""> Con lluvia de papas <button class="comprar">Comprar</button>
+                        <img src="../img/pancho3.png" alt=""> Con lluvia de papas
                         <p class="ingredientes">Pancho con papas pay crocantes</p>
                         <p class="ingredientes"><strong>$2.400</strong></p>
                     </li>
